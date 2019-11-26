@@ -337,10 +337,8 @@ p {
 }
 
 .footer {
-    font-size: 12px;
+    font-size: 11px;
     color: white;
-    font-family: 'Fjalla One',
-        sans-serif;
     padding: 24px 0px;
     /* background-color: #ff17e6; */
 }
@@ -411,6 +409,10 @@ p {
 
     }
 
+    .original-mask:active {
+        opacity: 1;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -428,6 +430,8 @@ p {
         width: 100%;
         left: 0;
         top: 16px;
+        font-size: 14px;
+        position: relative;
     }
 
     .glitch {
