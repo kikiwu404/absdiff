@@ -2,7 +2,8 @@ body {
     margin: 0;
     padding: 0;
     overscroll-behavior: none;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Roboto Mono',
+        monospace;
     background: black;
 }
 
@@ -30,6 +31,20 @@ a:visited {
 
 .underline:hover {
     text-decoration: underline;
+}
+
+.header {
+    position: fixed;
+    color: white;
+    z-index: 7;
+    padding: 8px;
+    font-size: 12px;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.header:hover {
+    background-color: blue;
 }
 
 
@@ -369,32 +384,69 @@ p {
 
 @media only screen and (max-width: 1024px) {
     .container {
-        width: 85%;
+        width: 90%;
+    }
+
+    .gallery {
+        height: 550px;
+    }
+
+    .moon1 {
+        top: 20%;
+    }
+
+    .moon2 {
+        top: 55%;
+    }
+
+    .moon3 {
+        top: 40%;
+    }
+
+    .moon4 {
+        top: 30%;
     }
 
     .original,
     .original-mask {
-        width: 120px;
-        height: 120px;
+        width: 140px;
+        height: 140px;
 
+    }
+
+    .quote {
+        width: 60%;
     }
 }
 
 @media only screen and (max-width: 768px) {
+    .bg {
+        top: -100px;
+    }
+
     .container {
-        width: 90%;
+        margin-top: -360px;
     }
 
     .about {
         width: 100%;
     }
 
+    .header {
+        width: 100%;
+        text-align: center;
+        top: 0px;
+        height: auto;
+        padding: 8px 0px;
+        background-color: blue;
+    }
+
     .gallery {
         height: 400px;
     }
 
-    .quote {
-        width: 60%;
+    .gallery h3 {
+        font-size: 54px;
     }
 
     .original-container {
@@ -413,6 +465,10 @@ p {
         opacity: 1;
     }
 
+    .quote {
+        width: 80%;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -426,10 +482,11 @@ p {
         top: 0px;
     }
 
+
     .subtitle {
         width: 100%;
         left: 0;
-        top: 16px;
+        top: 64px;
         font-size: 14px;
         position: relative;
     }
@@ -492,7 +549,25 @@ p {
     }
 
     .about {
-        margin-top: 0px;
+        margin-top: 36px;
     }
 
+}
+
+@media only screen and (max-width: 600px) {
+    .gallery {
+        height: 450px;
+    }
+
+    .original,
+    .original-mask {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 16px;
+    }
+
+    .quote {
+        width: 90%;
+        font-size: 20px;
+    }
 }
