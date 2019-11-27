@@ -14,11 +14,13 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
     <script type="text/javascript"
         src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Open+Sans:300, 400, 700, 800&display=swap"
         rel="stylesheet">
     <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+
 </head>
 
 <body>
@@ -235,25 +237,9 @@
     <div class="footer center-text">
         <a href="https://uglykiki.com">uglykiki.com</a> &nbsp;
         <a href="https://instagram.com/uglykiki"><i class="fa fa-instagram"></i></a>&nbsp;
-        <a href="https://instagram.com/uglykiki"><i class="fa fa-twitter"></i></a>
+        <a href="https://twitter.com/kikiwu404"><i class="fa fa-twitter"></i></a>
         <p>Copyright © 2019 Kiki Wu all rights reserved</p>
     </div>
-
-    <script>
-        $(function () {
-            $('.lazy').Lazy({
-                // your configuration goes here
-                scrollDirection: 'vertical',
-                effect: 'fadeIn',
-                visibleOnly: true,
-                onError: function (element) {
-                    console.log('error loading ' + element.data('src'));
-                }
-            });
-        });
-
-
-    </script>
 </body>
 
 </html>
